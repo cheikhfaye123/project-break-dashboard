@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url('./assets/img/background.jpg');
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34; 
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.heures, .date, .message {
+    margin: 10px 0;
+}
+
+.heures {
+    font-size: 3em; 
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.date {
+    font-size: 1.5em; 
+    font-family: "Open Sans", sans-serif;
+}
+
+.message {
+    font-size: 1.2em; 
+    font-family: "Open Sans", sans-serif;
+}

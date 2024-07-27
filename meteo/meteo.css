@@ -1,0 +1,133 @@
+ /* CSS reset */
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ 
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ 
+ body {
+     line-height: 1;
+ }
+ 
+ ol, ul {
+     list-style: none;
+ }
+ 
+ blockquote, q {
+     quotes: none;
+ }
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ /* Custom styles */
+ :root {
+     --white: #ffffff;
+     --off-white: #e5e5e5;
+     --transp-white-1: rgba(255, 255, 255, 0.25);
+     --transp-white-2: rgba(255, 255, 255, 0.1);
+     --blue-1: #62b8f5;
+     --blue-2: #4475ef;
+     --shadow: rgba(3, 46, 87, 0.2);
+ }
+ 
+ body {
+     height: 100vh;
+     background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+ }
+ 
+ .wrapper {
+     font-size: 16px;
+     width: 90vw;
+     max-width: 28em;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+ }
+ 
+ .container {
+     width: 100%;
+     background: var(--transp-white-2);
+     backdrop-filter: blur(10px);
+     padding: 3em 1.8em;
+     border: 2px solid var(--transp-white-2);
+     border-radius: 0.6em;
+     box-shadow: 0 1.8em 3.7em var(--shadow);
+     text-align: center;
+ }
+ .container h1{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 26px;
+     font-weight: 700;
+ }
+ 
+ .shape {
+     position: absolute;
+     background-color: var(--transp-white-1);
+     backdrop-filter: blur(1.2em);
+     border: 2px solid var(--transp-white-2);
+     border-radius: 50%;
+ }
+ 
+ .shape-1 {
+     height: 13.5em;
+     width: 13.5em;
+     right: -7.5em;
+     top: 1.8em;
+ }
+ 
+ .shape-2 {
+     height: 11em;
+     width: 11em;
+     bottom: -3.7em;
+     left: -2.5em;
+ }
+ 
+ #weather {
+     margin-top: 1em;
+ }
+ 
+ 
+ #result img {
+     width: 150px;
+     height: 150px;
+     margin-bottom: 0.5em;
+ }
+ 
+ #result h2 , strong{
+     font-family:'Courier New', Courier, monospace;
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 0.5em;
+ 
+ }
